@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+ul, h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.content-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.outer-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    @media screen and (max-width: 480px) {
+      min-width: 320px;
+    }
+  }
+  .inner-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @media screen and (max-width: 1199px) {
+      max-width: 768px;
+    }
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+    @media screen and (max-width: 480px) {
+      min-width: 320px;
+    }
+  }
+
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
