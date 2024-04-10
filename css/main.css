@@ -169,4 +169,48 @@
   text-align: center;
   color: #fff;
   border: none;
+}
+
+.hero {
+  padding-top: 90px;
+}
+
+.hero-paragraf {
+  color: #B6B6B6;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 42px;
+}
+
+.cards {
+  display: flex;
+}
+
+.cards-list {
+  margin-right: 30px;
+}
+
+.cards-img {
+  width: 380px;
+  height: 470px;
+}
+
+.cards-paragraf {
+  font-family: "font-family", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-variant: all-small-caps;
+  text-align: center;
+  color: #333;
+}
+
+.cards-text {
+  font-family: "second-family", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  color: #b6b6b6;
 }/*# sourceMappingURL=main.css.map */
