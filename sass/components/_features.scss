@@ -4,6 +4,10 @@
     
 }
 
+.features {
+    padding-top: 66px;
+}
+
 .features-logo {
     font-family: 'Kaushan Script';
     font-size: 24px;
@@ -23,6 +27,7 @@
     text-align: left;
     color: #333333;
     text-align: center;
+    position: relative;
 
     &:hover {
         &::after {
@@ -33,8 +38,8 @@
     &::after {
         content: "";
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 560px;
+        top: 70px;
         width: 0;
         height: 4px;
         background-color:  #F38181;
@@ -50,11 +55,13 @@
 }
 
 .features-list-item {
-    width: 270px;
+    width: 370px;
+
 }
 
 .features-img {
-    width: 38px;
+    width: 37px;
+    height: 37px;
 }
 
 .features-subtitle {
@@ -64,9 +71,7 @@
     line-height: 17.07px;
     text-align: left;
     color: #333333;
-
-
-
+    margin-bottom: 25px;
 }
 
 .features-paragraf {
