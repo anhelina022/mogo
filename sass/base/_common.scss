@@ -9,7 +9,7 @@ ul, h1, h2, h3, h4, p {
     margin: 0;
 }
 
-ul {
+ul, li {
     list-style: none;
 }
 
@@ -40,15 +40,6 @@ a {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    @media screen and (max-width: 1199px) {
-      max-width: 768px;
-    }
-    @media screen and (max-width: 767px) {
-      max-width: 480px;
-    }
-    @media screen and (max-width: 480px) {
-      min-width: 320px;
-    }
   }
 
   .is-hidden {
