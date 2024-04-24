@@ -144,6 +144,16 @@
   margin-bottom: 30px;
 }
 
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-paragraf {
   font-family: "font-family", sans-serif;
   font-weight: 400;
@@ -161,6 +171,7 @@
 }
 
 .footer-input {
+  margin-left: 530px;
   width: 230px;
   height: 40px;
   padding: 14px 18px;
@@ -182,6 +193,7 @@
 
 .hero {
   padding-top: 90px;
+  padding-bottom: 80px;
 }
 
 .hero-paragraf {
@@ -190,11 +202,13 @@
   font-family: "Roboto";
   font-style: normal;
   text-align: center;
-  margin-bottom: 80px;
+  margin: 60px 0 41px;
 }
 
 .cards {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards-list {
@@ -213,6 +227,7 @@
   font-variant: all-small-caps;
   text-align: center;
   color: #333;
+  margin: 30px 0 15px;
 }
 
 .cards-text {
@@ -257,11 +272,6 @@ a {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-}
-@media screen and (max-width: 480px) {
-  .outer-container {
-    min-width: 320px;
-  }
 }
 
 .inner-container {
