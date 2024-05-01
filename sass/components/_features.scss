@@ -23,18 +23,12 @@
     text-align: center;
     position: relative;
 
-    &:hover {
-        &::after {
-            width: 60px;
-        }
-    }
-
     &::after {
         content: "";
         position: absolute;
         left: 560px;
         top: 70px;
-        width: 0;
+        width: 60px;
         height: 4px;
         background-color: #F38181;
     }
@@ -50,13 +44,17 @@
 
 .features-list-item {
     width: 370px;
+    display: flex;
 }
 
 .features-img {
     width: 37px;
     height: 37px;
-    top: ;
-    left: ;
+    margin-right: 22px;
+}
+
+.features-div {
+
 }
 
 .features-subtitle {
@@ -66,7 +64,7 @@
     line-height: 17.07px;
     text-align: left;
     color: #333333;
-
+    margin-bottom: 26px;
 }
 
 .features-paragraf {
@@ -74,13 +72,4 @@
     font-size: 14px;
     font-family: 'Roboto';
     font-style: normal;
-}
-
-.features-subtitle::before {
-    content: "";
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: getColor('layout-bg');
-    margin-bottom: 30px;
 }
