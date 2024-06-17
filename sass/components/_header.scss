@@ -1,65 +1,73 @@
 .container {
-    width: 1600px;
-}
-
-.header .inner-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 340px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
 
 .header {
-    width: 100%;
-    padding: 24px 0;
+	padding-top: 17px;
+	margin-bottom: 70px;
 }
 
 .logo-link {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36.57px;
-    text-align: left;
-    color: #95E1D3;
-    text-decoration: none;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	color: #95e1d3;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
 }
 
 .nav-list {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+    display: none;
+}
 
-    &__link {
-        color: #95E1D3;
-        position: relative;
-        margin-right: 55px;
-        text-decoration: none;
+@media (min-width: 1200px) {
     
-        &:hover, &:focus {
-            color: #F38181;
-            &::after {
-                width: 100%;
-            }
-        }
-    
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 44px;
-            width: 0;
-            height: 4px;
-            background-color:  #F38181;
-            border-radius: 2px;
-            transition: width 250ms linear ;
-        }
-        
+    .container {
+		width: 1200px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 55px;
+    }
+
+    .nav-list__item {
+        position: relative;
+    }
+
+    .nav-list__item::before {
+		content: '';
+		position: absolute;
+		transition: 0.3s;
+	}
+
+    .nav-list__item:hover::before,
+	.nav-list__item:focus::before {
+		width: 100%;
+		height: 3px;
+		background: #f38181;
+		transform: translate(0, 22px);
+	}
+	.nav-list__link {
+		color: #95e1d3;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.nav-list__link:hover {
+		color: #f38181;
+	}
 }

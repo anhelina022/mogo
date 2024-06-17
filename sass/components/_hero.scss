@@ -1,73 +1,50 @@
 .hero {
-    padding-top: 90px;
-    padding-bottom: 80px;
-}
-
-.hero-logo {
-    font-family: 'Kaushan Script';
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 34.82px;
-    text-align: left;
-    color: #333333;
-    text-align: center;
-    margin-bottom: 36px;
-}
-
-.hero-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36.57px;
-    text-align: left;
-    color: #333333;
-    text-align: center;
-    position: relative;
-
-
-    &::after {
-        content: "";
-        position: absolute;
-        left: 780px;
-        top: 70px;
-        width: 60px;
-        height: 4px;
-        background-color: #F38181;
-    }
+    margin-bottom: 60px;
 }
 
 .hero-paragraf {
-    color: #B6B6B6;
-    font-size: 14px;
-    font-family: 'Roboto';
-    font-style: normal;
     text-align: center;
-    margin: 60px 0 41px;
+	color: #b6b6b6;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .cards {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 .cards-list {
-    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 100%;
 }
 
 .cards-img {
-    width: 380px;
-    height: 470px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .cards-paragraf {
-    font-family: 'font-family', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    font-variant: all-small-caps;
-    text-align: center;
     color: #333;
-    margin: 30px 0 15px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+    margin-bottom: 10px;
 }
 
 .cards-text {
@@ -77,4 +54,166 @@
     font-size: 15px;
     text-align: center;
     color: #b6b6b6;
+    line-height: normal;
 }
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .hero {
+        flex-basis: calc((100% - 70px) / 2);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .hero {
+        flex-basis: calc((100% - 70%) / 3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    .cards {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .cards-list {
+        flex-basis: calc((100% - 30%) / 3);
+    }
+}
+
+// .hero {
+//     padding-top: 90px;
+//     padding-bottom: 80px;
+// }
+
+// .hero-logo {
+//     font-family: 'Kaushan Script';
+//     font-size: 24px;
+//     font-weight: 400;
+//     line-height: 34.82px;
+//     text-align: left;
+//     color: #333333;
+//     text-align: center;
+//     margin-bottom: 36px;
+// }
+
+// .hero-text {
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 30px;
+//     font-weight: 700;
+//     line-height: 36.57px;
+//     text-align: left;
+//     color: #333333;
+//     text-align: center;
+//     position: relative;
+
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 100px;
+//         top: 70px;
+//         width: 60px;
+//         height: 4px;
+//         background-color: #F38181;
+//     }
+// }
+
+// .hero-paragraf {
+//     color: #B6B6B6;
+//     font-size: 14px;
+//     font-family: 'Roboto';
+//     font-style: normal;
+//     text-align: center;
+//     margin: 60px 0 41px;
+// }
+
+// .cards {
+//     display: flex;
+//     gap: 32px;
+// }
+
+// .cards-img {
+//     width: 380px;
+//     height: 470px;
+// }
+
+// .cards-paragraf {
+//     font-family: 'font-family', sans-serif;
+//     font-weight: 400;
+//     font-size: 14px;
+//     font-variant: all-small-caps;
+//     text-align: center;
+//     color: #333;
+//     margin: 30px 0 15px;
+// }
+
+// .cards-text {
+//     font-family: 'second-family', sans-serif;
+//     font-style: italic;
+//     font-weight: 300;
+//     font-size: 15px;
+//     text-align: center;
+//     color: #b6b6b6;
+// }
+
+
+// @media screen and (min-width:340px) {
+//     .container {
+//         width: 340px;
+//     }
+    
+//     .cards {
+//         display: flex;
+//         flex-direction: column;
+//     }
+
+//     .cards-img {
+//         width: 320px;
+//         flex-shrink: 0;
+        
+//     }
+
+//     .hero-paragraf {
+//         width: 340px;
+//     }
+
+//     .hero-text::after {
+//         left: 125px;
+//     }
+// }
+
+// @media screen and (min-width:768px) {
+//     .container {
+//         width: 768px;
+//     }
+
+//     .hero-paragraf {
+//         width: 100%;
+//     }
+
+//     .cards-img {
+//         width: 380px;
+//         height: 470px;
+//     }
+
+//     .cards {
+//         display: flex;
+//         align-items: center;
+//     }
+
+//     .hero-text::after {
+//         left: 335px;
+//     }
+// }

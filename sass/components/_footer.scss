@@ -1,54 +1,84 @@
- .footer {
-    width: 1200px;
-    margin: 0 auto;
+.footer {
+    margin-bottom: 10px;
+}
 
-    border-top: 2px solid #B6B6B6;
-    padding-bottom: 30px;
- }
-
- .footer-container {
-    display: flex;
-    align-items: baseline;
-    padding-top: 10px;
- }
+.footer-content {
+    border-top: 1px solid #b6b6b6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
 .footer-paragraf {
-    font-family: 'font-family',sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
     color: #333;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
 }
 
 .footer-text {
-    font-family: 'font-family', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-align: center;
     color: #f38181;
 }
 
-.footer-div {
+.footer-form {
     display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-label {
+    margin-bottom: 15px;
 }
 
 .footer-input {
-    margin-left: 530px;
     width: 230px;
-    height: 40px;
-    padding: 14px 18px;
-    border: 1.5px solid #B6B6B6;
+	height: 39px;
+	flex-shrink: 0;
+	border: 1px solid #b6b6b6;
+	padding-left: 10px;
+}
+
+.footer__input:focus-visible,
+.footer__label:focus-visible {
+	outline: 1px solid #b6b6b6;
 }
 
 .footer-btn {
-    width: 150px;
-    height: 40px;
-    background: #95e1d3;
-    font-family: 'font-family', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    font-variant: all-small-caps;
-    text-align: center;
-    color: #fff;
-    border: none;
+	width: 150px;
+	height: 40px;
+	flex-shrink: 0;
+	background: #95e1d3;
+	border: 1px solid #95e1d3;
+	color: #fff;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-variant: all-small-caps;
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 768px;
+    }
+
+    .footer-content {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 10px;
+	}
+	.footer-form {
+		flex-direction: row;
+	}
+	.footer-label {
+		margin-bottom: 0;
+	}
 }
